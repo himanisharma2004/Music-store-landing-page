@@ -1,0 +1,501 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar a {
+  margin: 0 15px;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url('images/hero-music.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background: #fff;
+  color: #3498db;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background: #ecf0f1;
+}
+
+/* Right Side Hero Features */
+.hero-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.shop-now-btn {
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shop-now-btn i {
+  margin-right: 6px;
+}
+
+.hero-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(6px);
+}
+
+/* Collections */
+.collections {
+  text-align: center;
+  padding: 60px 10%;
+  background: #f4f4f4;
+}
+
+.collections h3 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.collection-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.collection-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-10px);
+}
+
+.collection-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* About */
+.about {
+  padding: 60px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about .highlight {
+  color: #e74c3c;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #ecf0f1;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.testimonials h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.testimonials p {
+  font-style: italic;
+  margin: 10px auto;
+  color: #555;
+  max-width: 600px;
+}
+
+/* Contact */
+.contact {
+  background: #fdfdfd;
+  padding: 60px 10%;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-form button:hover {
+  background: #2980b9;
+}
+
+/* Music Preview */
+.music-preview {
+  background: #fff;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.music-preview h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-nav a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: #111;
+  color: #eee;
+}
+
+.dark-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Modal */
+.newsletter-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Custom Cursor Dot */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #e67e22;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+}
+
+/* Animations */
+.fade-in-up,
+.slide-left,
+.slide-right {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* -------------------- RESPONSIVE STYLES -------------------- */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 5%;
+    gap: 30px;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .collections h3,
+  .about h3,
+  .testimonials h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack header layout */
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content, .hero-image {
+    width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 30px;
+  }
+
+  .hero-shop {
+    align-items: center;
+  }
+
+  .hero-features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feature-card {
+    flex: 1 1 45%;
+    margin: 5px;
+  }
+
+  /* Collection cards stack */
+  .collection-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collection-card {
+    width: 90%;
+  }
+
+  /* Contact grid stack */
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-form, .contact-info {
+    width: 100%;
+  }
+
+  /* Footer nav */
+  .footer-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .footer-nav a {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 26px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .cta-btn,
+  .hero-btn,
+  .shop-now-btn,
+  .contact-form button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .collection-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .testimonials p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
